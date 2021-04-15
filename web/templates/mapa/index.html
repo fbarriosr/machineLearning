@@ -1,0 +1,93 @@
+{% extends "root/origin.html" %}
+
+{% load static %}
+{% static "" as baseUrl %}
+
+{% block title %}  
+
+{{nameWeb}}{{ title }}
+
+{% endblock %}
+
+
+
+ {% block body %} 
+ <div class="content">
+	<div class="content">
+		<div class="container-fluid">
+		  	<div class="row">
+            	<div class="col-lg-3 col-md-3 col-sm-12">
+	               <div class="card card-stats">
+	                  <div class="card-header card-header-default card-header-icon">
+	                     <div class="card-icon">
+	                        <i class="material-icons">av_timer</i>
+	                     </div>
+	                     <h3 class="card-title">Chile</h3>
+	                     <br><br>
+	                     <p class="card-category"></p>
+	                     <div class="row card-category">
+	                        {% include 'mapa/chile.html' %}
+	                     </div>
+	                  </div>
+	                  <div class="card-footer">
+	                     <div class="stats">
+	                        <i class="material-icons">date_range</i>Para obtener resultados confiables, utilice más de 50 simulaciones.
+	                     </div>
+	                  </div>
+	                  <div class="card-footer">
+	                     <div class="stats">
+	                        <i class="material-icons">star</i> 
+	                        Advertencia: conducir 100 simulaciones puede tardar varios segundos
+	                     </div>
+	                  </div>
+	               </div>
+	            </div>
+	            <div class="col-lg-9 col-md-9 col-sm-12 ">
+	               <div class="card card-stats">
+	                  <div class="card-header card-header-warning card-header-icon">
+	                     <div class="card-icon">
+	                        <i class="material-icons">psychology</i>
+	                     </div>
+	                     <h3 class="card-title">Santiago</h3>
+	                     <br><br>                   
+
+	                     <div class="row card-category ">
+	                     	<div class="col-sm-12 center-block">
+	                     	{% include 'mapa/santiago.html' %} 
+	                     	</div>
+	                     </div>
+	                  </div>
+	                  <div class="card-footer">
+	                     <div class="stats">
+	                        <i class="material-icons">insights</i>Deslice la importancia de un rubro para controlar la simulación. Las posiciones iniciales de los deslizadores corresponden a la configuración normal de la simulación
+	                     </div>
+	                  </div>
+	                  <div class="card-footer">
+	                     <div class="stats">
+	                        <i class="material-icons">star</i>Configuración de escenario por variable
+	                     </div>
+	                  </div>
+	               </div>
+	            </div>
+         	</div>
+			
+			        
+
+			       
+			       
+			        	
+			 
+		</div>
+	</div>
+ </div>     
+ {% endblock %}
+
+
+ {% block botonLateral %} 
+   
+ {% endblock %}
+
+
+ {% block extraJs %} 
+
+ {% endblock %}

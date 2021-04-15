@@ -1,0 +1,174 @@
+<div class="content">
+   <div class="content">
+      <div class="container-fluid">
+         <div>
+                <h2 class="text-center">Carga de Combustible</h2>
+         </div>
+         <div class="row">
+
+              <div class="col-sm-12 col-md-12 col-lg-12 ">
+               <div class="card card-stats">
+                  <div class="card-header card-header-success card-header-icon">
+                     <div class="card-icon" id="resultadosIcon">
+                        <i class="material-icons" >equalizer</i>
+                     </div>
+                     <h3 class="card-title">Predicción</h3>
+
+                     <div class="row card-category">
+                        <label class="col-sm-6">
+                        <strong>Definir<br>Horizonte</strong>
+                        </label>
+                        <div class="col-sm-6">
+                           <div class="form-group">
+                              <input class="form-control" type="text" name="range" range="[2,9]" required="true" placeholder="6" id='horizonte'/>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                     <button class="btn btn-primary btn-round" id='HoltWinter'>
+                     <i class="material-icons">insights</i> HoltWinter
+                     </button>
+                     <button class="btn btn-warning btn-round" id='Arima'>
+                     <i class="material-icons">stacked_bar_chart</i>    Arima    
+                     </button>
+                  </div>
+                  <div class="card-footer">
+                     <div class="stats">
+                        <i class="material-icons">update</i> Actualizado!
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            
+            <div class="col-sm-12 col-md-6  grafo" style="visibility: hidden;">
+               
+               <div class="card">
+                  <div class="card-header card-header-info">
+                     <canvas id="barType21" ></canvas>
+                  </div>
+                  <div class="card-body">
+                     <h3 class="card-title">Automóvil</h3>
+                  </div>
+                  <div class="card-footer">
+                     <div class="stats">
+                        <i class="material-icons">linear_scale</i>RMSE: 100
+                        
+                     </div>
+                     <div class="stats">
+                        <i class="material-icons">insights</i>RMSE %: 9 %
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-6  grafo" style="visibility: hidden;">
+               
+               <div class="card">
+                  <div class="card-header card-header-info">
+                     <canvas id="barType22" ></canvas>
+                  </div>
+                  <div class="card-body">
+                     <h3 class="card-title">Bus</h3>
+                  </div>
+                  <div class="card-footer">
+                     <div class="stats">
+                        <i class="material-icons">linear_scale</i>RMSE: 20
+                        
+                     </div>
+                     <div class="stats">
+                        <i class="material-icons">insights</i>RMSE %: 3 %
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-6  grafo" style="visibility: hidden;">
+               
+               <div class="card">
+                  <div class="card-header card-header-info">
+                     <canvas id="barType23" ></canvas>
+                  </div>
+                  <div class="card-body">
+                     <h3 class="card-title">Camión</h3>
+                  </div>
+                  <div class="card-footer">
+                     <div class="stats">
+                        <i class="material-icons">linear_scale</i>RMSE: 300
+                        
+                     </div>
+                     <div class="stats">
+                        <i class="material-icons">insights</i>RMSE %: 12 %
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-6  grafo" style="visibility: hidden;">
+               
+               <div class="card">
+                  <div class="card-header card-header-info">
+                     <canvas id="barType24" ></canvas>
+                  </div>
+                  <div class="card-body">
+                     <h3 class="card-title">Camioneta</h3>
+                  </div>
+                  <div class="card-footer">
+                     <div class="stats">
+                        <i class="material-icons">linear_scale</i>RMSE: 30
+                        
+                     </div>
+                     <div class="stats">
+                        <i class="material-icons">insights</i>RMSE %: 16 %
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6  grafo" style="visibility: hidden;">
+            
+               <div class="card">
+                  <div class="card-header card-header-info">
+                     <canvas id="barType25" ></canvas>
+                  </div>
+                  <div class="card-body">
+                     <h3 class="card-title">Minibus</h3>
+                  </div>
+                  <div class="card-footer">
+                     <div class="stats">
+                        <i class="material-icons">linear_scale</i>RMSE: 45
+                        
+                     </div>
+                     <div class="stats">
+                        <i class="material-icons">insights</i>RMSE %: 12 %
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6  grafo" style="visibility: hidden;">
+              
+               <div class="card">
+                  <div class="card-header card-header-info">
+                     <canvas id="barType26" ></canvas>
+                  </div>
+                  <div class="card-body">
+                     <h3 class="card-title">Station Wagon</h3>
+                  </div>
+                  <div class="card-footer">
+                     <div class="stats">
+                        <i class="material-icons">linear_scale</i>RMSE: 200
+                        
+                     </div>
+                     <div class="stats">
+                        <i class="material-icons">insights</i>RMSE %: 4 %
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+          
+
+     
+         </div>
+      </div>
+   </div>
+</div>

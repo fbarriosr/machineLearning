@@ -1,0 +1,209 @@
+ <div class="content">
+   <div class="content">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-sm-12 col-md-12  col-lg-12 col-xl-9">
+               <div class="card">
+                  <div class="card-header card-header-info">
+                     <canvas id="barType1" ></canvas>
+                  </div>
+                  <div class="card-body">
+                     <h3 class="card-title">Gráfico de Predicciones</h3>
+                  </div>
+                  <div class="card-footer">
+                     <div class="stats">
+                        <i class="material-icons">access_time</i>Cada punto corresponde a la predicción media para una semana
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-3">
+               <div class="card card-stats">
+                  <div class="card-header card-header-success card-header-icon">
+                     <div class="card-icon" id="resultadosIcon">
+                        <i class="material-icons" >equalizer</i>
+                     </div>
+                     <h3 class="card-title">Predicción</h3>
+                     <ul class="timeline timeline-simple">
+                        <li class="timeline-inverted">
+                           <div class="timeline-badge success">
+                              <i class="material-icons">attach_money</i>
+                           </div>
+                           <div class="timeline-panel">
+                              <div class="timeline-heading">
+                                 <span class="badge badge-success">
+                                    <h3 class="card-title" id="v1" style="color:white!important">151.954</h3>
+                                 </span>
+                              </div>
+                              <div class="timeline-body">
+                                 <p>Costo total</p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="timeline-inverted">
+                           <div class="timeline-badge success">
+                              <i class="material-icons">attach_money</i>
+                           </div>
+                           <div class="timeline-panel">
+                              <div class="timeline-heading">
+                                 <span class="badge  badge-success">
+                                    <h3 class="card-title" id="v2" style="color:white!important">51.954</h3>
+                                 </span>
+                              </div>
+                              <div class="timeline-body">
+                                 <p>Costo Medio Semanal</p>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                     <div class="row card-category">
+                        <label class="col-sm-6">
+                        <strong>Tasa de <br>Cambio ($CLP)</strong>
+                        </label>
+                        <div class="col-sm-6">
+                           <div class="form-group">
+                              <input class="form-control" type="text" name="range" range="[600,1000]" required="true" placeholder="738" id='dato'/>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                     <button class="btn btn-primary btn-round" id='simular'>
+                     <i class="material-icons">play_circle</i> Simular
+                     </button>
+                  </div>
+                  <div class="card-footer">
+                     <div class="stats">
+                        <i class="material-icons">update</i> Actualizado!
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+               <div class="card card-stats">
+                  <div class="card-header card-header-default card-header-icon">
+                     <div class="card-icon">
+                        <i class="material-icons">av_timer</i>
+                     </div>
+                     <h3 class="card-title">Parámetros</h3>
+                     <br><br>
+                     <p class="card-category"></p>
+                     <div class="row card-category">
+                        <label class="col-sm-3">
+                        <strong>Inicio</strong> <br>Simulación
+                        </label>
+                        <div class="col-sm-9 form-group">
+                           <input type="text" class="form-control datepicker" value="10/06/2018">
+                        </div>
+                        <label class="col-sm-3 label-on-right">
+                        <strong>Semanas <br></strong><span>Min: </span> 1 <br> <span>Máx:</span>52.
+                        </label>
+                        <div class="col-sm-3">
+                           <div class="form-group">
+                              <input class="form-control" type="text" name="range" range="[1,52]" required="true" />
+                           </div>
+                        </div>
+                        <label class="col-sm-3 label-on-right">
+                        <strong>Simulaciones <br></strong><span>Min: </span> 10 <br> <span>Máx:</span>100.
+                        </label>
+                        <div class="col-sm-3">
+                           <div class="form-group">
+                              <input class="form-control" type="text" name="range" range="[10,100]" required="true" />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-footer">
+                     <div class="stats">
+                        <i class="material-icons">date_range</i>Para obtener resultados confiables, utilice más de 50 simulaciones.
+                     </div>
+                  </div>
+                  <div class="card-footer">
+                     <div class="stats">
+                        <i class="material-icons">star</i> 
+                        Advertencia: conducir 100 simulaciones puede tardar varios segundos
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+               <div class="card card-stats">
+                  <div class="card-header card-header-warning card-header-icon">
+                     <div class="card-icon">
+                        <i class="material-icons">psychology</i>
+                     </div>
+                     <h3 class="card-title">Rubros</h3>
+                     <br><br>                   
+                     <div class="row card-category">
+                        <label class="col-sm-3 label-on-right">
+                        <strong>100003 <br></strong><span>Min: </span> -4 <br> <span>Máx:</span>4.
+                        </label>
+                        <div class="col-sm-3">
+                           <div class="form-group">
+                              <input class="form-control" type="text" name="range" range="[1,52]" required="true" />
+                           </div>
+                        </div>
+                        <label class="col-sm-3 label-on-right">
+                        <strong>130100 <br></strong><span>Min: </span> -4 <br> <span>Máx:</span>4.
+                        </label>
+                        <div class="col-sm-3">
+                           <div class="form-group">
+                              <input class="form-control" type="text" name="range" range="[10,100]" required="true" />
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row card-category">
+                        <label class="col-sm-3 label-on-right">
+                        <strong>100005<br></strong><span>Min: </span> -4 <br> <span>Máx:</span>4.
+                        </label>
+                        <div class="col-sm-3">
+                           <div class="form-group">
+                              <input class="form-control" type="text" name="range" range="[1,52]" required="true" />
+                           </div>
+                        </div>
+                        <label class="col-sm-3 label-on-right">
+                        <strong>100001<br></strong><span>Min: </span> -4 <br> <span>Máx:</span>4.
+                        </label>
+                        <div class="col-sm-3">
+                           <div class="form-group">
+                              <input class="form-control" type="text" name="range" range="[10,100]" required="true" />
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row card-category">
+                        <label class="col-sm-3 label-on-right">
+                        <strong>100018<br></strong><span>Min: </span> -4 <br> <span>Máx:</span>4.
+                        </label>
+                        <div class="col-sm-3">
+                           <div class="form-group">
+                              <input class="form-control" type="text" name="range" range="[1,52]" required="true" />
+                           </div>
+                        </div>
+                        <label class="col-sm-3 label-on-right">
+                        <strong>Otros<br></strong><span>Min: </span> -4 <br> <span>Máx:</span>4.
+                        </label>
+                        <div class="col-sm-3">
+                           <div class="form-group">
+                              <input class="form-control" type="text" name="range" range="[10,100]" required="true" />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-footer">
+                     <div class="stats">
+                        <i class="material-icons">insights</i>Deslice la importancia de un rubro para controlar la simulación. Las posiciones iniciales de los deslizadores corresponden a la configuración normal de la simulación
+                     </div>
+                  </div>
+                  <div class="card-footer">
+                     <div class="stats">
+                        <i class="material-icons">star</i>Configuración de escenario por variable
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

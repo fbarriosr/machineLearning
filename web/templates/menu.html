@@ -1,0 +1,60 @@
+{% load static %}
+{% static "" as baseUrl %}
+
+
+ <div class="sidebar" data-color="rose" data-background-color="black" data-image= "{% static 'img/sidebar-1.jpg' %}" >
+ <div class="logo">
+    <a  class="simple-text logo-normal disabled">
+       <div class="simple-text logo-normal disabled photo  " style="text-align: center;">
+          <img src="{% static 'img/logo.png' %}" />
+       </div>
+    </a>
+    <a  class="simple-text logo-normal disabled">
+    Machine Learning
+    </a>
+ </div>
+ <div class="sidebar-wrapper">
+    <ul class="nav">
+
+       <li 
+          {% url 'home' as top_path %} 
+          {% if request.path == top_path  %} 
+             class="nav-item active"  
+          {% else %}
+            class="nav-item "
+          {%endif  %}
+       >
+          <a class="nav-link" href="{% url 'home'%}">
+             <i class="material-icons">widgets</i>
+             <p> Sistema Inteligente</p>
+          </a>
+       </li>
+       <li 
+          {% url 'combustible' as top_path2 %} 
+          {% if request.path == top_path2  %} 
+             class="nav-item active"  
+          {% else %}
+            class="nav-item "
+          {%endif  %}
+        > 
+          <a class="nav-link" href="{% url 'combustible'%}">
+             <i class="material-icons">timeline</i>
+             <p> Combustibles</p>
+          </a>
+       </li>
+       <li 
+          {% url 'mapa' as top_path2 %} 
+          {% if request.path == top_path2  %} 
+             class="nav-item active"  
+          {% else %}
+            class="nav-item "
+          {%endif  %}
+        > 
+          <a class="nav-link" href="{% url 'mapa'%}">
+             <i class="material-icons">timeline</i>
+             <p> mapas</p>
+          </a>
+       </li>
+    </ul>
+ </div>
+</div>

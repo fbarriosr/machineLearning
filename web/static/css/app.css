@@ -1,0 +1,27 @@
+a.simple-text.logo-normal {
+    font-size: 16px !important;
+    text-align: center;
+    padding: 2px !important; 
+} 
+.sidebar[data-color=rose] li.active>a {
+    background-color: #9EAA59 !important;
+    color: black !important; 
+    box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(233 30 99 / 40%);
+}
+
+label.col-sm-3 {
+    text-align: right;
+}
+
+
+svg path {
+	fill: #2C2B30;
+	stroke:  #eee ;
+	stroke-width: .25;
+}
+
+svg path:hover{
+	fill: #9EAA59;
+	transition: 0.2s;
+	cursor: pointer;
+}

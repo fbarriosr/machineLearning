@@ -1,0 +1,27 @@
+{% extends "root/origin.html" %}
+
+{% load static %}
+{% static "" as baseUrl %}
+
+{% block title %}  
+
+{{nameWeb}}{{ title }}
+
+{% endblock %}
+
+
+
+ {% block body %} 
+       {% include "combustible/combustible.html" %}
+ {% endblock %}
+
+
+ {% block botonLateral %} 
+        {% include "botonLateral.html" %}
+ {% endblock %}
+
+
+ {% block extraJs %} 
+      <script src="{% static 'js/setting.js' %}"></script>
+      <script src="{% static 'js/bar2.js' %}"></script>
+ {% endblock %}

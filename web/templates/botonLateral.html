@@ -1,0 +1,42 @@
+{% load static %}
+{% static "" as baseUrl %}
+<div class="fixed-plugin">
+   <div class="dropdown show-dropdown">
+      <a href="#" data-toggle="dropdown">
+      <i class="fa fa-cog fa-2x"> </i>
+      </a>
+      <ul class="dropdown-menu">
+         <li class="header-title"> {{ title }}</li>
+         <div class="card-description" style="padding: 10px;">
+            {{ abstract }}
+         </div>
+         <li class="header-title">Instrucciones</li>
+         <li class="active">
+            <a class="img-holder switch-trigger" href="javascript:void(0)">
+            <img src="{% static 'img/sidebar-1.jpg' %}"  alt="">
+            </a>
+         </li>
+         <li>
+            <a class="img-holder switch-trigger" href="javascript:void(0)">
+            <img src="{% static 'img/sidebar-2.jpg' %}"  alt="">
+            </a>
+         </li>
+         <li>
+            <a class="img-holder switch-trigger" href="javascript:void(0)">
+            <img src="{% static 'img/sidebar-3.jpg' %}"  alt="">
+            </a>
+         </li>
+         <li>
+            <a class="img-holder switch-trigger" href="javascript:void(0)">
+            <img src="{% static 'img/sidebar-4.jpg' %}"  alt="">
+            </a>
+         </li>
+         <li class="button-container">
+            <a href="" target="_blank" class="btn btn-rose btn-block btn-fill disabled">Ver Video</a>
+            <a href="" target="_blank" class="btn btn-default btn-block disabled">
+            Documentación
+            </a>
+         </li>
+      </ul>
+   </div>
+</div>
